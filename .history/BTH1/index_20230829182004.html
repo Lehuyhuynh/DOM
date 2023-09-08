@@ -1,0 +1,104 @@
+Nguyễn Mạnh Cường
+Hnay lớp đổi phòng học. Mọi người đến thì đi vào phòng bên tay phải của cửa ra vào nhé @All 
+https://www.youtube.com/watch?v=ogkbC0uxWTE
+@All Mọi người thử làm giao diện này xem sao nhé. Tối a chữa
+Tip: Dùng grid-template-area
+Nguyễn Mạnh Cường
+Mai chúng ta học về js, mn đọc trc bài giúp a nhé @All
+Tô Văn Nguyên
+Nay vânc học phòng bên phải hả anh
+Nguyễn Mạnh Cường
+Ừ
+Tô Văn Nguyên
+Anh ơi cái bài thực hành 4 là phải viết cả onclick nữa ạ
+Nguyễn Mạnh Cường
+Bài js à
+Tô Văn Nguyên
+Vâng
+Nguyễn Mạnh Cường
+Hay bootstrap
+Tô Văn Nguyên
+Thực hành 4 js
+Nguyễn Mạnh Cường
+Chưa cần làm bài 4
+Làm những bài hqua cta làm thôi
+Tô Văn Nguyên
+Vâng
+https://www.youtube.com/watch?v=0SJE9dYdpps&list=PL_-VfJajZj0VgpFpEVFzS...kXtBe-x5
+Cho bạn nào htrc và hôm nay nghỉ
+xem đến video số 60
+@Tuan Anh @Trần nay có đi học k e
+Tuan Anh
+a ơi e vẫn trên lớp
+Tuan Anh
+nay e học bù
+Trần
+Nay e học onl lịch học ở trường ko qua đc ạ 
+Nguyễn Mạnh Cường
+thế xem video a gửi
+Tuan Anh
+dạ
+Trần
+Vâng ạ 
+A cường có thể gửi em slide bài javascript được ko a
+https://docs.google.com/presentation/d/1cDWReQfGWChcj0ojU89V6axByQj0KCk...&sd=true
+Nguyễn Mạnh Cường
+@Huy Anh nay có đi học không e
+Huy Anh
+em có ạ
+Huy Anh
+function decimalToBinary(num) {
+            const binaryNumber = num.toString(2);
+
+            return binaryNumber;
+        }
+
+        const decimal = 10;
+        const binary = decimalToBinary(decimal);
+        console.log(binary);
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Todo list</h3>
+    <input id="input" type="text" placeholder="Enter todo" />
+    <button id="add">Add</button>
+    <ul id="container"></ul>
+  </body>
+  <script>
+    const container = document.querySelector("#container");
+
+    const btnAdd = document.querySelector("#add");
+    const input = document.querySelector("#input");
+
+    const todos = [];
+
+    btnAdd.addEventListener("click", function () {
+      // lấy giá trị của ô input
+      const value = input.value;
+
+      if (!value) return;
+
+      // Thêm giá trị đó lên UI
+      todos.push(value);
+
+      render();
+
+      input.value = null;
+    });
+
+    function render() {
+      const liElements = todos.map((todo) => {
+        return `<li>${todo}</li>`;
+      });
+
+      container.innerHTML = liElements.join("");
+    }
+
+    render();
+  </script>
+</html>

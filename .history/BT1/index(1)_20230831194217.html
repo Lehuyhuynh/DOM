@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bT1</title>
+</head>
+<body>
+
+  <h2>ĐO CHỈ SỐ</h2>
+  <table>
+    <div>
+      <lable for="height"> Chieuef cao</lable>
+    <input type="text" placeholder="tinh theo m" id="height">
+    </div>
+    <div>
+      <lable for="weight"> can nag</lable>
+    <input type="text" placeholder="tinh theo m" id="weight">
+    </div>
+    <div>
+      <lable for="gender"> gioi tinh</lable>
+      <input type="radio" name="name" id="gender">Nam
+      <input type="radio" name="name" id="gender">Nu
+    </div>
+  </table>
+  <button id="btn">ket qua</button>
+  <script>
+    const weight = document.querySelector("#weight");
+    console.log(weight)
+    const height = document.querySelector("#height");
+    console.log(height)
+    const btn = document.querySelector("#btn");
+    
+    btn.addEventListener("cilck", function(e){
+
+      if(!weight || !height ){
+        alert("")
+      }
+      
+      const result = weight /(height*height)
+      console.log(result)
+    })
+  </script>
+</body>
+</html>

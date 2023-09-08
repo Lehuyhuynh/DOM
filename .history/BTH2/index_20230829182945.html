@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Mouse Events - Button Demo</title>
+</head>
+<body>
+  <button id="btn">Click me with any mouse button: left, right, middle, ...</button>
+  <p id="message"></p>
+<script>
+let btn = document.querySelector('#btn');
+
+btn.addEventListener('contextmenu', (e) => {
+e.preventDefault();
+});
+</script>
+</body>
+</html>

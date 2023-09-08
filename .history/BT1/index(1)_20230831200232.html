@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bT1</title>
+</head>
+<body>
+
+  <h2>ĐO CHỈ SỐ</h2>
+  <from id="from">
+    <div>
+      <lable for="height"> Chieuef cao</lable>
+    <input type="text" placeholder="tinh theo m" id="height" name="height">
+    </div>
+    <div>
+      <lable for="weight"> can nag</lable>
+    <input type="text" placeholder="tinh theo m" id="weight" name=" weight">
+    </div>
+    <div>
+      <lable for="gender"> gioi tinh</lable>
+      <input type="radio" name="gender" id="gender" value="mail">Nam
+      <input type="radio" name="gender" id="gender" value="femail">Nu
+    </div>
+    <div>
+      <button type="submit">ket qua</button>
+    </div>
+  </from>
+
+  <script>
+    const from=document.querySelector("#from");
+
+    from.addEventListener("submit", function(e){
+      e.preventDefault();
+      const heightInput = from.e["height"]
+      const weightInput = from.e["weight"]
+      const genderInput = from.e["gender"]
+
+      const height = heightInput.value;
+      const weight = weightInput.value;
+      const gender = genderInput.v
+
+      console.log({
+        height,
+        weight,
+        gender,
+
+      })
+    })
+
+   
+  </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+function changeColor(newColor) {
+
+  const elem = document.getElementById('para');
+  
+  elem.style.color = newColor;
+}
+//  b1 lay phan tu de tuong tac
+var container =document.querySelector('#container')
+console.log(container)
+
+// taoj ra 1 phan tu moi  
+ const pTag = document.createElement('p')
+ pTag.innerText = "welcom to ...."
+ console.log(pTag)
+
+ container.appendChild(pTag);
+
+ const showBTN =document.querySelector('#container button')
+ showBTN.addEventListener('click', function(event))

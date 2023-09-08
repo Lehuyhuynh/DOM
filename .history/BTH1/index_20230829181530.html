@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BTH1</title>
+</head>
+<body>
+  <h1>Todo list</h1>
+  <input  id="input" type="text">
+  <button id="add"> Add</button>
+<ul id="container">
+
+</ul>
+  <script>
+    const todos = [];
+
+    const container = document.querySelector("#container")
+    const btnAdd = document.querySelector("#add")
+    const input = document.querySelector("#input")
+
+    btnAdd.addEventListener("click", function (){
+      // lấy giá trị của ô input
+      const value = input.value
+      console.log(value);
+      if(!value)return;
+      // thêm giá trị đó lên UI
+      todos.push(value);
+      console.log(todos)
+      render();
+      input.value = null
+    });
+
+    function render(){
+      const liElements = todo.map((todo) =>{
+        return `<li> ${todo} </li>`
+      })
+    }
+    
+  </script>
+  
+</body>
+</html>
